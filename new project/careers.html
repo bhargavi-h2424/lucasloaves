@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Luca's Loaves</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="products.html">Order Online</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="careers">
+        <h1>Join Our Team at Luca's Loaves</h1>
+        <p>At Luca’s Loaves, we’re always looking for passionate individuals who share our love for artisanal bread. Whether you’re a baker, customer service expert, or just someone who appreciates good bread, there’s a place for you at Luca’s Loaves!</p>
+        
+        <p>We offer a collaborative and creative work environment where every team member has the opportunity to grow. If you have a strong work ethic and a passion for creating high-quality products, we want to hear from you. We are currently accepting applications for various positions, and we’re excited to welcome new faces to our growing team!</p>
+
+        <h2>Current Opportunities</h2>
+        <ul>
+            <li>Bakers</li>
+            <li>Front-of-House Staff</li>
+            <li>Delivery Drivers</li>
+            <li>Marketing and Social Media Experts</li>
+        </ul>
+        <p>Don’t see a position that fits you? No worries! We’re always open to hearing from potential team members who are eager to contribute. Feel free to apply using the form below, and we’ll keep your information on file for future opportunities.</p>
+
+        <h2>Apply Now</h2>
+        <form action="submit_application.php" method="POST" enctype="multipart/form-data">
+            <!-- Name Field -->
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Cover Letter Upload -->
+            <div class="form-group">
+                <label for="coverLetter">Attach Cover Letter (PDF, DOC):</label>
+                <input type="file" id="coverLetter" name="coverLetter" accept=".pdf,.doc,.docx" required>
+            </div>
+
+            <!-- Resume Upload -->
+            <div class="form-group">
+                <label for="resume">Attach Resume (PDF, DOC):</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="apply-button">Apply Now</button>
+            <form action="submit_form.php" method="POST" enctype="multipart/form-data">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Luca's Loaves | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
